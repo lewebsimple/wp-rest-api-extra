@@ -15,8 +15,12 @@ Provides the WordPress REST API with extra features.
 This plugin adds the following endpoints:
 
 * wp-rest-api-extra/v1/menu-by-location/<location>
+* wp-rest-api-extra/v1/post-by-url/<url>
 
 == Changelog ==
+
+= 1.1.0 =
+* Add wp-rest-api-extra/v1/post-by-url endpoint
 
 = 1.0.0 =
 * Add wp-rest-api-extra/v1/menu-by-location endpoint
