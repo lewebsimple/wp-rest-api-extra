@@ -19,6 +19,9 @@ This plugin adds the following endpoints:
 
 == Changelog ==
 
+= 1.1.1 =
+* Allow empty <url> parameter to retrieve front page
+
 = 1.1.0 =
 * Add wp-rest-api-extra/v1/post-by-url endpoint
 
