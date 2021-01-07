@@ -4,17 +4,17 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-// Register menu_by_location endpoint
+// Register menu-by-location endpoint
 add_action( 'rest_api_init', 'wp_rest_api_extra_register_menu_by_location' );
 function wp_rest_api_extra_register_menu_by_location() {
-	register_rest_route( WP_REST_API_EXTRA_NAMESPACE, '/menu_by_location/(?P<location>[a-zA-Z0-9_-]+)', array(
+	register_rest_route( WP_REST_API_EXTRA_NAMESPACE, '/menu-by-location/(?P<location>[a-zA-Z0-9_-]+)', array(
 		'methods'             => WP_REST_Server::READABLE,
 		'callback'            => 'wp_rest_api_extra_get_menu_by_location',
 		'permission_callback' => '__return_true',
 	) );
 }
 
-// Callback for menu_by_location
+// Callback for menu-by-location
 function wp_rest_api_extra_get_menu_by_location( WP_REST_Request $request ) {
 	$location  = $request->get_param( 'location' );
 	$locations = get_nav_menu_locations();
